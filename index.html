@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roadtrip Planner</title>
+        <link rel="shortcut icon" type="image/jpg" href="images/car-icon.png"/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
+    <body>
+        <!-- list of places -->
+        <div class="page">
+            <div class="list-top">
+                <p>(Current max of 22 locations)</p>
+            </div>
+            <div id="location-list">
+                <div class="location-set" id="1">
+                    <select id="selector">
+                        <option value="arrive">Arrive at</option>
+                        <option value="depart">Leave at</option>
+                    </select>
+                    <input type="time" id="time" name="time" min="00:00" max="24:00">
+                    <p>on</p>
+                    <input type="date" id="start" name="trip-start" value="2018-07-22">
+                    <p>to</p>
+                    <input placeholder="location" id="location">
+                    <p class="exit">X</p>
+                </div>
+            </div>
+            <div class="options">
+                <button id="addLoc">Add Location</button>
+                <button id="calculate">Calculate</button>
+            </div>
+        </div>
+
+        <!-- displayed calendar -->
+        <div>
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;mode=WEEK&amp;bgcolor=%234285F4&amp;ctz=America%2FDenver&amp;src=NzlxbXI2M2plOXEydHYwb2dzZGhzNWZwN3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showNav=1" 
+            style="border:solid 1px #777"
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <!-- map of the trip -->
+        <div>
+            <iframe
+            id = "map"
+            width="600"
+            height="450"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            src="">
+            </iframe>
+        </div>
+        <div class="footer">
+            <p>https://github.com/HeyImParker/Roadtrip-planner</p>
+        </div>
+
+        <script text="type/javascript" src="/config.js"></script>
+        <script text="type/javascript" src="/script.js"></script>
+    </body>
+</html>

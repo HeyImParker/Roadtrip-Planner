@@ -1,0 +1,17 @@
+Basic functionality
+-Validate that the addresses entered are actually addresses
+-Make it so the 'X' removes an line of items from the set
+-Fix time and date boxes so the show the full date no matter what the screen size it
+-Display calendar starting from the date of the first event
+-Be sure to deal with the calendar timezone
+(I should probably make the list of places an array of objects, then push that array through each funtion)
+
+Advanced items
+-Include traffic in calculation?
+-Add arrows so you can reorder the items in the list (or, even better, drag-and-drop)
+-Using the given route, add a list at the bottom of suggested places to visit
+-Combine it to a chrome extention (attaches to google account?? Need a way to save it- maybe all the info is in a google sheet
+    then just displays on the webpage)
+-Can save links to each location
+-Create a queue of possible places and then you take item from the queue and put them on the actual list to calculate timing and price
+    (add price option too)
