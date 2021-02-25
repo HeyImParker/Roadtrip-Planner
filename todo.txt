@@ -1,6 +1,7 @@
 Basic functionality
 -Validate that the addresses entered are actually addresses
--Make it so the 'X' removes an line of items from the set
+-Fix modo selector so that a change will actually make the event fire
+-<bug> only the last set will update on change
 -Fix time and date boxes so the show the full date no matter what the screen size it
 -Display calendar starting from the date of the first event
 -Be sure to deal with the calendar timezone
