@@ -56,6 +56,22 @@
 .cal {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 40em;
+}
+
+.hour-mark {
+    display: flex;
+    position: relative;
+    height: 12.5%;
+    border-bottom: 1px black solid;
+}
+
+.hour {
+    position: absolute;
+    bottom: 0;
+    left: .5em;
 }
 
 .map {
