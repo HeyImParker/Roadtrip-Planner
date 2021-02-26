@@ -7,7 +7,6 @@
         <link rel='stylesheet' href='styles.css'/>
     </head>
     <body>
-        <a href="Test/test.html">Testing page</a>
         <!-- list of places -->
         <div class="page">
             <div class="list-top">
@@ -15,14 +14,16 @@
             </div>
             <div id="location-list">
                 <div class="location-set" id="1">
-                    <select id="selector1">
+                    <select id="selector">
                         <option value="arrive">Arrive at</option>
                         <option value="depart">Leave at</option>
                     </select>
-                    <input type="time" id="time1" name="time" min="00:00" max="24:00">
-                    <input type="date" id="date1" name="trip-start" value="2018-07-22">
-                    <input placeholder="location" id="location1">
-                    <p class="exit" id="exit1"></p>
+                    <input type="time" id="time" name="time" min="00:00" max="24:00">
+                    <p>on</p>
+                    <input type="date" id="start" name="trip-start" value="2018-07-22">
+                    <p>to</p>
+                    <input placeholder="location" id="location">
+                    <p class="exit">X</p>
                 </div>
             </div>
             <div class="options">
@@ -32,7 +33,7 @@
         </div>
 
         <!-- displayed calendar -->
-        <div class="cal">
+        <div>
             <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;mode=WEEK&amp;bgcolor=%234285F4&amp;ctz=America%2FDenver&amp;src=NzlxbXI2M2plOXEydHYwb2dzZGhzNWZwN3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showNav=1" 
             style="border:solid 1px #777"
             width="800" 
@@ -43,7 +44,7 @@
         </div>
 
         <!-- map of the trip -->
-        <div class="map">
+        <div>
             <iframe
             id = "map"
             width="600"
